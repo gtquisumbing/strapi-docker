@@ -13,7 +13,7 @@ async function buildBaseImages({ shouldPush = false } = {}) {
     const tags = await buildBaseImage({ nodeVersion, shouldPush });
     const alpineTags = await buildBaseImage({
       nodeVersion,
-      alpine: true,
+      alpine: false,
       shouldPush,
     });
 

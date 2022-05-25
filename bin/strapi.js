@@ -25,7 +25,7 @@ async function buildStrapiImages({ version, shouldPush = false } = {}) {
     const alpineTags = await buildStrapiImage({
       nodeVersion,
       version,
-      alpine: true,
+      alpine: false,
       shouldPush,
     });
 
